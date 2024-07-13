@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.bobvarioa.kubejsprojecte.mixin",
+  "package": "ru.blatfan.kubejsprojecte.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "kubejsprojecte.refmap.json",
   "mixins": [

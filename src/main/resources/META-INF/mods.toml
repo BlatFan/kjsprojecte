@@ -1,36 +1,36 @@
 modLoader = "javafml"
-loaderVersion = "[43,)"
+loaderVersion = "[47,)"
 license = "MIT"
 
 [[mods]]
 modId = "kubejsprojecte"
 version = "${file.jarVersion}"
 displayName = "KubeJS ProjectE"
-authors = "BobVarioa"
+authors = "BlatFan, BobVarioa"
 description = '''
 
 '''
 [[dependencies.kubejsprojecte]]
     modId = "forge"
     mandatory = true
-    versionRange = "[43,)"
+    versionRange = "[47,)"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.kubejsprojecte]]
     modId = "minecraft"
     mandatory = true
-    versionRange = "[1.19.2,1.20)"
+    versionRange = "[1.20.1,1.21)"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.kubejsprojecte]]
     modId = "kubejs"
     mandatory = true
-    versionRange = "[1902.6.1-build.282,)"
+    versionRange = "[2001.6.4-build.114,)"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.kubejsprojecte]]
     modId = "projecte"
     mandatory = true
-    versionRange = "[1.0.1B,)"
+    versionRange = "[1.0.1,)"
     ordering = "NONE"
     side = "BOTH"

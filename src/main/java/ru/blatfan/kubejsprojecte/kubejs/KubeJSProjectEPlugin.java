@@ -1,6 +1,6 @@
-package com.bobvarioa.kubejsprojecte.kubejs;
+package ru.blatfan.kubejsprojecte.kubejs;
 
-import com.bobvarioa.kubejsprojecte.projecte.KubeJSEMCMapperAfter;
+import ru.blatfan.kubejsprojecte.projecte.KubeJSEMCMapperAfter;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.event.EventGroup;
 import dev.latvian.mods.kubejs.event.EventHandler;

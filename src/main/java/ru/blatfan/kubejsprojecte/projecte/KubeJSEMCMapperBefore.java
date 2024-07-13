@@ -1,4 +1,4 @@
-package com.bobvarioa.kubejsprojecte.projecte;
+package ru.blatfan.kubejsprojecte.projecte;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import moze_intel.projecte.api.mapper.EMCMapper;
@@ -6,6 +6,7 @@ import moze_intel.projecte.api.mapper.IEMCMapper;
 import moze_intel.projecte.api.mapper.collector.IMappingCollector;
 import moze_intel.projecte.api.nss.NormalizedSimpleStack;
 import moze_intel.projecte.emc.json.NSSSerializer;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.server.ReloadableServerResources;
 import net.minecraft.server.packs.resources.ResourceManager;
 
@@ -28,13 +29,12 @@ public class KubeJSEMCMapperBefore implements IEMCMapper<NormalizedSimpleStack, 
     public String getDescription() {
         return "Allows KubeJS ProjectE to function";
     }
-
+    
     public Map<String, Long> items = new HashMap<>();
-
+    
     @Override
-    public void addMappings(IMappingCollector<NormalizedSimpleStack, Long> mapper, CommentedFileConfig commentedFileConfig, ReloadableServerResources reloadableServerResources, ResourceManager resourceManager) {
-        for (var entry : items.entrySet()) {
-            mapper.setValueBefore(NSSSerializer.INSTANCE.deserialize(entry.getKey()), entry.getValue());
-        }
+    public void addMappings(IMappingCollector<NormalizedSimpleStack, Long> iMappingCollector, CommentedFileConfig commentedFileConfig, ReloadableServerResources reloadableServerResources, RegistryAccess registryAccess, ResourceManager resourceManager) {
+        for (var entry : items.entrySet())
+            iMappingCollector.setValueBefore(NSSSerializer.INSTANCE.deserialize(entry.getKey()), entry.getValue());
     }
 }

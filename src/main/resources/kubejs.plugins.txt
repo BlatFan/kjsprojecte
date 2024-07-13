@@ -1,1 +1,1 @@
-com.bobvarioa.kubejsprojecte.kubejs.KubeJSProjectEPlugin
+ru.blatfan.kubejsprojecte.kubejs.KubeJSProjectEPlugin

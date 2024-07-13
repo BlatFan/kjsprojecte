@@ -15,8 +15,8 @@ plugins {
 
 apply plugin: 'org.spongepowered.mixin'
 
-group = 'com.bobvarioa'
-version = '1.2'
+group = 'ru.blatfan'
+version = '1.0'
 
 java {
     archivesBaseName = 'kubejsprojecte'
@@ -37,7 +37,7 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.19.2'
+    mappings channel: 'official', version: '1.20.1'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -165,16 +165,16 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft "net.minecraftforge:forge:$minecraft_version-$forge_version"
+    minecraft "net.minecraftforge:forge:1.20.1-47.3.0"
 
-    implementation fg.deobf("dev.architectury:architectury-forge:$architectury_version")
+    implementation fg.deobf("dev.architectury:architectury-forge:9.1.12")
 
     // KubeJS
-    implementation fg.deobf("dev.latvian.mods:kubejs-forge:$kubejs_version")
-    implementation fg.deobf("dev.latvian.mods:rhino-forge:$rhino_version")
+    implementation fg.deobf("dev.latvian.mods:kubejs-forge:2001.6.4-build.114")
+    implementation fg.deobf("dev.latvian.mods:rhino-forge:2001.2.2-build.18")
 
-    // Ars Nouveau)
-    implementation fg.deobf("curse.maven:projecte-226410:$projecte_version")
+    // ProjectE
+    implementation fg.deobf("curse.maven:projecte-226410:4901949")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
@@ -184,11 +184,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "kubejsprojecte",
-                "Specification-Vendor"    : "BobVarioa",
+                "Specification-Vendor"    : "BlatFan, BobVarioa",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "BobVarioa",
+                "Implementation-Vendor"   : "BlatFan, BobVarioa",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

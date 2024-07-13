@@ -1,7 +1,7 @@
-package com.bobvarioa.kubejsprojecte;
+package ru.blatfan.kubejsprojecte;
 
-import com.bobvarioa.kubejsprojecte.kubejs.KubeJSProjectEPlugin;
-import com.bobvarioa.kubejsprojecte.projecte.KubeJSEMCMapperAfter;
+import ru.blatfan.kubejsprojecte.kubejs.KubeJSProjectEPlugin;
+import ru.blatfan.kubejsprojecte.projecte.KubeJSEMCMapperAfter;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.TagsUpdatedEvent;
